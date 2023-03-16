@@ -6,15 +6,15 @@ void examProblem5(void) {
     // Program 1
     printf("Program 1 Output:\n");
     printsep();
-    printf("Welcome to C!\n"); // <- program 1 code
+    printf("Welcome to C!\n");
     printsep(); println();
     printf("Program 2 Output:\n");
     printsep();
-    printf( "Welcome " );    // <- program 2 code
-    printf( "to C!\n" );    // <-
+    printf( "Welcome " );
+    printf( "to C!\n" );
     printsep(); println();
     printf("Program 3 Output:\n");
     printsep();
-    printf("Welcome\nto\nC!\n"); // <- program 3 code
+    printf("Welcome\nto\nC!\n");
     printsep();
 }
