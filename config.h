@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 void examProblem1(void);
 void examProblem2(void);
 void examProblem3(void);
