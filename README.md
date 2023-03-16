@@ -20,17 +20,17 @@ Use the following command to clone the git repository:
 Navigate to the chosen directory in CLion. Open ENGR120-exam1 directory as a project.
 ## FAQ
 
-#### Why do some of the files say exam 2?
+#### Q: Why do some of the files say exam 2?
 
-The project created beforehand was used in junction with a seperate class, specifically for the second exam.
+A: The project created beforehand was used in junction with a seperate class, specifically for the second exam.
 
-#### I cloned the repository, but I can't run the program.
+#### Q: I cloned the repository, but I can't run the program.
 
-This project was made with CLion with the intention of allowing the students to view the source code as part of the answers to the questions on the exam. If you are using CLion, be sure to build the project and run it using the tools in the top left corner of the screen. The standard I/O terminal should appear.
+A: This project was made with CLion with the intention of allowing the students to view the source code as part of the answers to the questions on the exam. If you are using CLion, be sure to build the project and run it using the tools in the top left corner of the screen. The standard I/O terminal should appear.
 
-#### Can I use this program without CLion?
+#### Q: Can I use this program without CLion?
 
-Usage of this project without CLion was not tested, but you can manually compile and run the program with any tools you'd like, assuming you add the correct files.
+A: Usage of this project without CLion was not tested, but you can manually compile and run the program with any tools you'd like, assuming you add the correct files.
 The required files for the program to run properly are as follows:
 
 - config.h
@@ -39,9 +39,9 @@ The required files for the program to run properly are as follows:
 - examProblem1.c, examProblem2.c, etc.
 - examTrueFalse.c
 
-#### I got an error saying my version does not meet the minimum requirement.
+#### Q: I got an error saying my version does not meet the minimum requirement.
 
-This error is just a formality from CLion. To fix this, open the CMakeLists.txt file in the project. In the following line:
+A: This error is just a formality from CLion. To fix this, open the CMakeLists.txt file in the project. In the following line:
 ```cmake
 cmake_minimum_required(VERSION 3.19.2)
 ```
