@@ -20,7 +20,6 @@ void examProblem17(void);
 void examTrueFalse(void);
 
 void println(void);
-unsigned char start = 1;
 void printsep(void);
 
 int problemSelector(int problem);

@@ -1,5 +1,7 @@
 #include "config.h"
 
+unsigned char start = 1;
+
 int main(void) {
     int problem;
     do {

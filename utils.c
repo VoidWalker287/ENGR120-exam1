@@ -1,4 +1,5 @@
 #include "config.h"
+extern unsigned char start;
 
 // New Line Function
 void println(void) { printf("\n"); }
