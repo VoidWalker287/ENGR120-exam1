@@ -38,3 +38,11 @@ The required files for the program to run properly are as follows:
 - utils.c
 - examProblem1.c, examProblem2.c, etc.
 - examTrueFalse.c
+
+#### I got an error saying my version does not meet the minimum requirement.
+
+This error is just a formality from CLion. To fix this, open the CMakeLists.txt file in the project. In the following line:
+```cmake
+cmake_minimum_required(VERSION 3.19.2)
+```
+change 3.19.2 to your current CLion version. Then, reload the changes made to the file (a prompt should appear in the top right corner).
