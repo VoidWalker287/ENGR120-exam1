@@ -11,25 +11,25 @@ This program is for searching the answers to exam 1 from ENGR 120-01 in Spring 2
 
 ## Installation
 
-#### Install using terminal emulator:
-Open the terminal emulator, and change your directory to the desired location of the project.
+#### Install using terminal emulator
+1. Open the terminal emulator, and change your directory to the desired location of the project.
 Use the following command to clone the git repository:
 ```bash
   git clone https://github.com/VoidWalker287/ENGR120-exam1.git
 ```
-Navigate to the chosen directory in CLion. Open ENGR120-exam1 directory as a project.
+2. Navigate to the chosen directory in CLion. Open ENGR120-exam1 directory as a project.
 
 #### Install using CLion
-Go to File > New > File from Version Control
+1. Go to File > New > File from Version Control
 
-Under the Repository URL tab, paste the following URL:
+2. Under the Repository URL tab, paste the following URL:
 ```bash
 https://github.com/VoidWalker287/ENGR120-exam1.git
 ```
 In order to properly clone the project, you must clone it into a completely empty folder.
 
 #### Install Manually with GCC (No CLion)
-Download the header file and every C file from the project:
+1. Download the header file and every C file from the project:
 
 - config.h
 - main.c
@@ -37,7 +37,9 @@ Download the header file and every C file from the project:
 - examProblem1.c, examProblem2.c, etc.
 - examTrueFalse.c
 
-Use the following code to create a Makefile:
+This can be done by opening the "Code" menu on the home page of the repository and selecting "Download ZIP". Exctract the files to your chosen directory of folder, and delete the other files.
+
+2. Use the following code to create a Makefile:
 ```Makefile
 examAnswers1: main.o utils.o examProblem1.o examProblem2.o examProblem3.o examProblem4.o examProblem5.o examProblem6.o examProblem7.o examProblem8.o examProblem9.o examProblem10.o examProblem11.o examProblem12.o examProblem13.o examProblem14.o examProblem15.o examProblem16.o examProblem17.o examTrueFalse.o
 	gcc -o examAnswers1 main.o utils.o examProblem1.o examProblem2.o examProblem3.o examProblem4.o examProblem5.o examProblem6.o examProblem7.o examProblem8.o examProblem9.o examProblem10.o examProblem11.o examProblem12.o examProblem13.o examProblem14.o examProblem15.o examProblem16.o examProblem17.o examTrueFalse.o
@@ -103,7 +105,8 @@ examTrueFalse.o: examTrueFalse.c
 	gcc -c examTrueFalse.c
 ```
 
-With the all of the mentioned files saved in a single directory or folder, run ```make```. If you are on Windows, you will have to [install GCC](https://dev.to/gamegods3/how-to-install-gcc-in-windows-10-the-easier-way-422j) and [make](https://stackoverflow.com/questions/2532234/how-to-run-a-makefile-in-windows). To run the program, use ```examAnswers1``` on Windows or ```./examAnswers1``` on Linux.
+3. With the all of the mentioned files saved in a single directory or folder, run ```make```. If you are on Windows, you will have to [install GCC](https://dev.to/gamegods3/how-to-install-gcc-in-windows-10-the-easier-way-422j) and [make](https://stackoverflow.com/questions/2532234/how-to-run-a-makefile-in-windows).
+To run the program, use ```examAnswers1``` on Windows or ```./examAnswers1``` on Linux.
 
 ## FAQ
 
