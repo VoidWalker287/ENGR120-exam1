@@ -18,6 +18,20 @@ Use the following command to clone the git repository:
   git clone https://github.com/VoidWalker287/ENGR120-exam1.git
 ```
 Navigate to the chosen directory in CLion. Open ENGR120-exam1 directory as a project.
+
+#### Install using CLion
+Go to File > New > File from Version Control
+
+Under the Repository URL tab, paste the following URL:
+```bash
+https://github.com/VoidWalker287/ENGR120-exam1.git
+```
+
+In order to properly clone the project, you must clone it into a completely empty folder. It is recommended that this folder is named:
+```bash
+ENGR120-exam1
+```
+
 ## FAQ
 
 #### Q: Why do some of the files say exam 2?
@@ -46,3 +60,7 @@ A: This error is just a formality from CLion. To fix this, open the CMakeLists.t
 cmake_minimum_required(VERSION 3.19.2)
 ```
 change 3.19.2 to your current CLion version. Then, reload the changes made to the file (a prompt should appear in the top right corner).
+
+#### Q: Why can't I clone the project in CLion?
+
+A: Please make sure you are cloning the project into a completely empty folder. This folder will act as the project folder, similar to creating a new project in CLion locally.
