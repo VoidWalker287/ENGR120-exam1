@@ -26,11 +26,84 @@ Under the Repository URL tab, paste the following URL:
 ```bash
 https://github.com/VoidWalker287/ENGR120-exam1.git
 ```
+In order to properly clone the project, you must clone it into a completely empty folder.
 
-In order to properly clone the project, you must clone it into a completely empty folder. It is recommended that this folder is named:
-```bash
-ENGR120-exam1
+#### Install Manually with GCC (No CLion)
+Download the header file and every C file from the project:
+
+- config.h
+- main.c
+- utils.c
+- examProblem1.c, examProblem2.c, etc.
+- examTrueFalse.c
+
+Use the following code to create a Makefile:
+```Makefile
+examAnswers1: main.o utils.o examProblem1.o examProblem2.o examProblem3.o examProblem4.o examProblem5.o examProblem6.o examProblem7.o examProblem8.o examProblem9.o examProblem10.o examProblem11.o examProblem12.o examProblem13.o examProblem14.o examProblem15.o examProblem16.o examProblem17.o examTrueFalse.o
+	gcc -o examAnswers1 main.o utils.o examProblem1.o examProblem2.o examProblem3.o examProblem4.o examProblem5.o examProblem6.o examProblem7.o examProblem8.o examProblem9.o examProblem10.o examProblem11.o examProblem12.o examProblem13.o examProblem14.o examProblem15.o examProblem16.o examProblem17.o examTrueFalse.o
+
+main.o: main.c
+	gcc -c main.c
+
+utils.o: utils.c
+	gcc -c utils.c
+
+examProblem1.o: examProblem1.c
+	gcc -c examProblem1.c
+
+examProblem2.o: examProblem2.c
+	gcc -c examProblem2.c
+
+examProblem3.o: examProblem3.c
+	gcc -c examProblem3.c
+
+examProblem4.o: examProblem4.c
+	gcc -c examProblem4.c
+
+examProblem5.o: examProblem5.c
+	gcc -c examProblem5.c
+
+examProblem6.o: examProblem6.c
+	gcc -c examProblem6.c
+
+examProblem7.o: examProblem7.c
+	gcc -c examProblem7.c
+
+examProblem8.o: examProblem8.c
+	gcc -c examProblem8.c
+
+examProblem9.o: examProblem9.c
+	gcc -c examProblem9.c
+
+examProblem10.o: examProblem10.c
+	gcc -c examProblem10.c
+
+examProblem11.o: examProblem11.c
+	gcc -c examProblem11.c
+
+examProblem12.o: examProblem12.c
+	gcc -c examProblem12.c
+
+examProblem13.o: examProblem13.c
+	gcc -c examProblem13.c
+
+examProblem14.o: examProblem14.c
+	gcc -c examProblem14.c
+
+examProblem15.o: examProblem15.c
+	gcc -c examProblem15.c
+
+examProblem16.o: examProblem16.c
+	gcc -c examProblem16.c
+
+examProblem17.o: examProblem17.c
+	gcc -c examProblem17.c
+
+examTrueFalse.o: examTrueFalse.c
+	gcc -c examTrueFalse.c
 ```
+
+With the all of the mentioned files saved in a single directory or folder, run ```make```. If you are on Windows, you will have to [install GCC](https://dev.to/gamegods3/how-to-install-gcc-in-windows-10-the-easier-way-422j) and [make](https://stackoverflow.com/questions/2532234/how-to-run-a-makefile-in-windows). To run the program, use ```examAnswers1``` on Windows or ```./examAnswers1``` on Linux.
 
 ## FAQ
 
@@ -41,17 +114,6 @@ A: The project created beforehand was used in junction with a seperate class, sp
 #### Q: I cloned the repository, but I can't run the program.
 
 A: This project was made with CLion with the intention of allowing the students to view the source code as part of the answers to the questions on the exam. If you are using CLion, be sure to build the project and run it using the tools in the top left corner of the screen. The standard I/O terminal should appear.
-
-#### Q: Can I use this program without CLion?
-
-A: Usage of this project without CLion was not tested, but you can manually compile and run the program with any tools you'd like, assuming you add the correct files.
-The required files for the program to run properly are as follows:
-
-- config.h
-- main.c
-- utils.c
-- examProblem1.c, examProblem2.c, etc.
-- examTrueFalse.c
 
 #### Q: I got an error saying my version does not meet the minimum requirement.
 
